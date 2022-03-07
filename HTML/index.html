@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GI:FT</title>
-    <<<<<<< HEAD
+    <link rel="stylesheet" href="..\css\index_style.css">
   </head>
 
   <body>
     <div class="pannel">
       <!--Title-->
-      <div class="Appheader">
+      <div class="app_header">
         <h1>Genshin Impact Tracker</h1>
       </div>
 
       <!--Seach Bar-->
-      <div class="serach1">
+      <div class="search1">
         <form action="">
           <label for="search1"><b>Search</b></label>
           <input type="text" id="search1" placeholder="Search" />
@@ -25,12 +25,20 @@
       <br />
 
       <div class="tabs" style="text-align: left">
-        <table style="background-color: aqua">
+        <table>
+          <!--Table header-->
+          <tr>
+            <div class="header_tabs">
+            <th><button class="dropdown_button_tracker" id="Trackers">Trackers</button></th>
+            <th><button class="dropdown_button_guides" id="Guides">Guides</button></th>
+            <th><button class="dropdown_button_genshin_sites" id="Genshin_Sites">Genshin Sites</button></th>
+            <th><button class="dropdown_button_more_info" id="More_Info">More Info</button></th>
+          </div>
+          </tr>
           <tr>
             <td>
               <!--Dropdown Menu On Hover for Trackers:Add Animation on CSS/Javascript-->
-              <div class="dropdown_tracker" style="background-color: violet">
-                <button class="dropdown_button_tracker">Trackers</button>
+              <div class="dropdown_tracker tabs" id="Trackers">
                 <div class="dropdown_content_tracker">
                   <nav>
                     <ul style="list-style-type: none">
@@ -56,8 +64,7 @@
             </td>
 
             <td>
-              <div class="dropdown_guide" style="background-color: rgb(76, 209, 143)">
-                <button class="dropdown_button_guides">Guides</button>
+              <div class="dropdown_guide tabs" id="Guides">
                 <div class="dropdown_content_guide">
                   <nav>
                     <ul style="list-style-type: none">
@@ -95,8 +102,7 @@
             </td>
 
             <td>
-              <div class="dropdown_genshin_sites" style="background-color: azure">
-                <button class="dropdown_button_genshin_sites">Genshin Sites</button>
+              <div class="dropdown_genshin_sites tabs" id="Genshin_Sites">
                 <div class="dropdown_content_genshin_sites">
                   <nav>
                     <ul style="list-style-type: none">
@@ -124,8 +130,7 @@
             </td>
 
             <td>
-              <div class="dropdown_more_info" style="background-color: peru">
-                <button class="dropdown_button_more_info">More Info</button>
+              <div class="dropdown_more_info tabs" id="More_Info">
                 <div class="dropdown_content_more_info">
                   <nav>
                     <ul style="list-style-type: none">
@@ -157,6 +162,7 @@
                 </div>
               </div>
             </td>
+
           </tr>
         </table>
       </div>

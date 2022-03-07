@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(57, 42, 97);
+}
+.pannel {
+  background-color: blue;
+}
+
+.app_header {
+  background-color: rgb(240, 154, 154);
+}
+
+.search1 {
+  background-color: rgb(0, 255, 21);
+}
+
+.tabs {
+  background-color: rgb(201, 230, 42);
+}
+
+td {
+  vertical-align: top;
+}
