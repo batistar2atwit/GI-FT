@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -5,143 +6,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GI:FT</title>
   </head>
+
   <body>
-    <div class="title">
-      <h1>Genshin Impact Farming Tracker</h1>
+    <div class="pannel">
+      <!--Title-->
+      <div class="Appheader">
+        <h1>Genshin Impact Tracker</h1>
+      </div>
+
+      <!--Seach Bar-->
+      <div class="serach1">
+        <form action="">
+          <label for="search1"><b>Search</b></label>
+          <input type="text" id="search1" placeholder="Search" />
+        </form>
+      </div>
+      <br />
+
+      <div class="tabs" style="text-align: left">
+        <table style="background-color: aqua">
+          <tr>
+            <td>
+              <!--Dropdown Menu On Hover for Trackers:Add Animation on CSS/Javascript-->
+              <div class="dropdown_tracker" style="background-color: violet">
+                <button class="dropdown_button_tracker">Trackers</button>
+                <div class="dropdown_content_tracker">
+                  <nav>
+                    <ul style="list-style-type: none">
+                      <li>
+                        <span id="ascension_gems"><a href="#">Ascension gems</a></span>
+                      </li>
+                      <li>
+                        <span id="talent_books"><a href="#">Talent Books</a></span>
+                      </li>
+                      <li>
+                        <span id="normal_boss_materials"><a href="#">Normal Boss Materials</a></span>
+                      </li>
+                      <li>
+                        <span id="mora_calculator"><a href="#">Mora Calculator</a></span>
+                      </li>
+                      <li>
+                        <span id="wish_calculator"><a href="#">Wish Calculator</a></span>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </td>
+
+            <td>
+              <div class="dropdown_guide" style="background-color: rgb(76, 209, 143)">
+                <button class="dropdown_button_guides">Guides</button>
+                <div class="dropdown_content_guide">
+                  <nav>
+                    <ul style="list-style-type: none">
+                      <li>
+                        <span id="element_guide"><a href="#">Element Guide</a></span>
+                      </li>
+                      <li>
+                        <span id="character_guide"><a href="#">Character Guide</a></span>
+                      </li>
+                      <li>
+                        <span id="enemy_guide"><a href="#">Enemy Guide</a></span>
+                      </li>
+                      <li>
+                        <span id="ascension_material_guide"><a href="#">Ascension Materials Guide</a></span>
+                      </li>
+                      <li>
+                        <span id="talent_books_guide"><a href="#">Talent Books Guide</a></span>
+                      </li>
+                      <li>
+                        <span id="artifacts_guide"><a href="#">Artifacts Guide</a></span>
+                      </li>
+                      <li>
+                        <span id="weapon_guide"><a href="#">Weapon Guide</a></span>
+                      </li>
+                      <li>
+                        <span id="plant_guide"><a href="#">Plant Guide</a></span>
+                      </li>
+                      <li>
+                        <span id="food_guide"><a href="#">Food Guide</a></span>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </td>
+
+            <td>
+              <div class="dropdown_genshin_sites" style="background-color: azure">
+                <button class="dropdown_button_genshin_sites">Genshin Sites</button>
+                <div class="dropdown_content_genshin_sites">
+                  <nav>
+                    <ul style="list-style-type: none">
+                      <li>
+                        <span id="interactive_map"><a href="https://genshin-impact-map.appsample.com/#/" id="map">Interactive Map</a></span>
+                      </li>
+                      <li>
+                        <span id="daily_check_in"><a href="https://webstatic-sea.mihoyo.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&mhy_auth_required=true&mhy_presentation_style=fullscreen&utm_source=tools&lang=en-us&bbs_theme=dark&bbs_theme_device=1">Daily Check In</a></span>
+                      </li>
+                      <li>
+                        <span id="hoyolab_website"><a href="https://www.hoyolab.com/home">Hoyolab Website</a></span>
+                      </li>
+                      <li>
+                        <span id="genshin_twitter"><a href=" https://mobile.twitter.com/GenshinImpact">Genshin Twitter</a></span>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </td>
+
+            <td>
+              <div class="dropdown_more_info" style="background-color: peru;">
+                <button class="dropdown_button_more_info">More Info</button>
+                <div class="dropdown_content_more_info">
+                  <nav>
+                    <ul style="list-style-type: none;">
+                      <li>
+                        <span id="about_me">
+                          <a href="about_me.html">About Me</a>
+                        </span>
+                      </li>
+                      <li>
+                        <span id="Ver_Update_logs">
+                          <a href="Ver_Update_Notice.html">App Update Logs</a>
+                        </span>
+                      </li>
+                      <li>
+                        <span id="Feedback">
+                          <a href="Feedback.html">Feedback</a>
+                        </span>
+                      </li>
+                      <li>
+                        <span id="register">
+                          <a href="Register&Login\Register.html">Register</a>
+                        </span>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </td>
+
+          </tr>
+        </table>
+      </div>
     </div>
-    <div class="search1">
-      <!--Form allows us to collect data. To collect data use some back end software like php/javascript-->
-      <!--Action is useless since we are using back end to collect data-->
-      <form action="" method="">
-        <label for="search"><strong>Search</strong> </label>
-        <input type="text" name="search" id="search" />
-      </form>
-    </div>
-    <div class="table1">
-      <!--Table for tabs-->
-      <table>
-        <!--Table Row-->
-
-        <div class="tracketTabs">
-          <tr>
-            <!--Table Header-->
-            <td>
-              <span>
-                <b>Tracker</b>
-              </span>
-            </td>
-          </tr>
-        </div>
-
-        <div class="tracketTabs">
-          <tr>
-            <td><button type="button">Ascension Gems</button></td>
-          </tr>
-          <tr>
-            <td><button type="button">Talent Books</button></td>
-          </tr>
-          <tr>
-            <td><button type="button">Normal Boss Materials</button></td>
-          </tr>
-          <tr>
-            <td><button type="button">Mora Calculator</button></td>
-          </tr>
-          <tr>
-            <td><button type="button">Wish Calculator</button></td>
-          </tr>
-        </div>
-
-        <div class="Guides">
-          <tr>
-            <td>
-              <span>
-                <b>Guides</b>
-              </span>
-            </td>
-          </tr>
-        </div>
-
-        <div class="ItemDescription">
-          <tr>
-            <td>
-              <span>
-                <b>Item Description</b>
-              </span>
-            </td>
-          </tr>
-        </div>
-
-        <div class="GenshinSites">
-          <tr>
-            <td>
-              <span>
-              <b>Genshin Sites</b>
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                <ul>
-                  <b>
-                    <!--Interactive Map-->
-                    <li>
-                        <a href="https://genshin-impact-map.appsample.com/#/" id="map">Interactive Map</a>
-                    </li>
-                    <br>
-                    <!--Daily Check In-->
-                    <li>
-                        <a
-                            href="https://webstatic-sea.mihoyo.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&mhy_auth_required=true&mhy_presentation_style=fullscreen&utm_source=tools&lang=en-us&bbs_theme=dark&bbs_theme_device=1">Daily Check In</a>
-                    </li>
-                    <br>
-                    <!--Hoyolab Website-->
-                    <li>
-                      <a href="https://www.hoyolab.com/home">Hoyolab Website</a>
-                    </li>
-                    <br>
-                    <!--Genshin twitter-->
-                    <li>
-                    <a href=" https://mobile.twitter.com/GenshinImpact">Genshin Twitter</a>
-                    </li>
-                  </b>
-                </ul>
-              </p>
-            </td>
-          </tr>
-        </div>
-
-        <div class="MoreInfo">
-          <tr>
-            <td><b>More Info</b></td>
-            <p>
-              <ul>
-                <b>
-                  <!--About Me-->
-              <li>
-                  <a href="about_me.html">About Me</a>
-              </li>
-              <br>
-              <!--Update Logs-->
-              <li>
-                  <a href="Ver_Update_Notice.html">App Update Logs</a>
-              </li>
-              <br>
-              <!--FeedBack-->
-              <li>
-                  <a href="Feedback.html">Feedback</a>
-              </li>
-
-              <a href="Register&Login\Register.html">Register</a>
-                </b>
-              </ul>
-            </p>
-          </tr>
-        </div>
-      </table>
-    </div>
-          </b>
-      </ul>
-    </p>
   </body>
 </html>
