@@ -26,146 +26,54 @@
         <br />
       </div>
 
-      <div class="tabs" style="text-align: left">
-        <table>
-          <!--Table header-->
-          <tr>
-            <div class="header_tabs">
-              <th><button class="dropdown_button_tracker" id="Trackers">Trackers</button></th>
-              <th><button class="dropdown_button_guides" id="Guides">Guides</button></th>
-              <th><button class="dropdown_button_genshin_sites" id="Genshin_Sites">Genshin Sites</button></th>
-              <th><button class="dropdown_button_more_info" id="More_Info">More Info</button></th>
-            </div>
-          </tr>
-          <tr>
-            <td>
-              <!--Dropdown Menu On Hover for Trackers:Add Animation on CSS/Javascript-->
-              <div class="dropdown_tracker tabs" id="Trackers">
-                <div class="dropdown_content_tracker">
-                  <nav>
-                    <ul style="list-style-type: none">
-                      <li>
-                        <span id="ascension_gems"><a href="#">Ascension gems</a></span>
-                      </li>
-                      <li>
-                        <span id="talent_books"><a href="#">Talent Books</a></span>
-                      </li>
-                      <li>
-                        <span id="normal_boss_materials"><a href="#">Normal Boss Materials</a></span>
-                      </li>
-                      <li>
-                        <span id="mora_calculator"><a href="#">Mora Calculator</a></span>
-                      </li>
-                      <li>
-                        <span id="wish_calculator"><a href="#">Wish Calculator</a></span>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </td>
+      <div class="navbar">
+        <button type="button" class="dropbtn" id="tracker-tab">Tracker</button>
+        <div class="dropdown-content" id="tracker-content">
+          <a href="#">Ascension gems</a>
+          <a href="#">Talent Books</a>
+          <a href="#">Character Level</a>
+          <a href="#">Normal Boss Materials</a>
+          <a href="#">Mora Calculator</a>
+          <a href="#">Wish Calculator</a>
+        </div>
+      </div>
 
-            <td>
-              <div class="dropdown_guide tabs" id="Guides">
-                <div class="dropdown_content_guide">
-                  <nav>
-                    <ul style="list-style-type: none">
-                      <li>
-                        <span id="element_guide"><a href="#">Element Guide</a></span>
-                      </li>
-                      <li>
-                        <span id="character_guide"><a href="#">Character Guide</a></span>
-                      </li>
-                      <li>
-                        <span id="enemy_guide"><a href="#">Enemy Guide</a></span>
-                      </li>
-                      <li>
-                        <span id="ascension_material_guide"><a href="#">Ascension Materials Guide</a></span>
-                      </li>
-                      <li>
-                        <span id="talent_books_guide"><a href="#">Talent Books Guide</a></span>
-                      </li>
-                      <li>
-                        <span id="artifacts_guide"><a href="#">Artifacts Guide</a></span>
-                      </li>
-                      <li>
-                        <span id="weapon_guide"><a href="#">Weapon Guide</a></span>
-                      </li>
-                      <li>
-                        <span id="plant_guide"><a href="#">Plant Guide</a></span>
-                      </li>
-                      <li>
-                        <span id="food_guide"><a href="#">Food Guide</a></span>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </td>
+      <div class="navbar">
+        <button type="button" class="dropbtn" id="guide-tab">Guide</button>
+        <div class="dropdown-content" id="guide-content">
+          <a href="#">Element Guide</a>
+          <a href="#">Character Guide</a>
+          <a href="#">Enemy Guide</a>
+          <a href="#">Ascension Materials Guide</a>
+          <a href="#">Talent Books Guide</a>
+          <a href="#">Artifacts Guide</a>
+          <a href="#">Weapon Guide</a>
+          <a href="#">Plant Guide</a>
+          <a href="#">Food Guide</a>
+        </div>
+      </div>
+    </div>
 
-            <td>
-              <div class="dropdown_genshin_sites tabs" id="Genshin_Sites">
-                <div class="dropdown_content_genshin_sites">
-                  <nav>
-                    <ul style="list-style-type: none">
-                      <li>
-                        <span id="interactive_map"><a href="https://genshin-impact-map.appsample.com/#/" id="map">Interactive Map</a></span>
-                      </li>
-                      <li>
-                        <span id="daily_check_in"
-                          ><a
-                            href="https://webstatic-sea.mihoyo.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&mhy_auth_required=true&mhy_presentation_style=fullscreen&utm_source=tools&lang=en-us&bbs_theme=dark&bbs_theme_device=1"
-                            >Daily Check In</a
-                          ></span
-                        >
-                      </li>
-                      <li>
-                        <span id="hoyolab_website"><a href="https://www.hoyolab.com/home">Hoyolab Website</a></span>
-                      </li>
-                      <li>
-                        <span id="genshin_twitter"><a href=" https://mobile.twitter.com/GenshinImpact">Genshin Twitter</a></span>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </td>
+    <div class="navbar">
+      <button type="button" class="dropbtn" id="genshin-site-tab">Genshin Site</button>
+      <div class="dropdown-content" id="genshin-site-content">
+        <a href="https://genshin-impact-map.appsample.com/#/" id="map">Interactive Map</a>
+        <a
+          href="https://webstatic-sea.mihoyo.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&mhy_auth_required=true&mhy_presentation_style=fullscreen&utm_source=tools&lang=en-us&bbs_theme=dark&bbs_theme_device=1"
+          >Daily Check In</a
+        >
+        <a href="https://www.hoyolab.com/home">Hoyolab Website</a>
+        <a href=" https://mobile.twitter.com/GenshinImpact">Genshin Twitter</a>
+      </div>
+    </div>
 
-            <td>
-              <div class="dropdown_more_info tabs" id="More_Info">
-                <div class="dropdown_content_more_info">
-                  <nav>
-                    <ul style="list-style-type: none">
-                      <li>
-                        <span id="about_me">
-                          <a href="about_me.html">About Me</a>
-                        </span>
-                      </li>
-
-                      <li>
-                        <span id="Ver_Update_logs">
-                          <a href="Ver_Update_Notice.html">App Update Logs</a>
-                        </span>
-                      </li>
-
-                      <li>
-                        <span id="Feedback">
-                          <a href="Feedback.html">Feedback</a>
-                        </span>
-                      </li>
-
-                      <li>
-                        <span id="register">
-                          <a href="Register&Login\Register.html">Register</a>
-                        </span>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </table>
+    <div class="navbar">
+      <button type="button" class="dropbtn" id="more-info-tab">More Info</button>
+      <div class="dropdown-content" id="more-info-content">
+        <a href="about_me.html">About Me</a>
+        <a href="Ver_Update_Notice.html">App Update Logs</a>
+        <a href="Feedback.html">Feedback</a>
+        <a href="Register&Login\Register.html">Register</a>
       </div>
     </div>
   </body>

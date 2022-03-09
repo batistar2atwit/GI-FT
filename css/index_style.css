@@ -1,25 +1,42 @@
-body {
-  background-image: linear-gradient(to bottom, #3f5c8c, white);
+.dropbtn {
+  background-color: #0269a4;
+  color: white;
+  padding: 5px;
+  padding-right: 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
 }
 
-#app_header {
-  background-color: top;
-  text-align: left;
-  height: 15%;
-  width: 15%;
+.navbar {
   position: relative;
+  display: inline-block;
 }
 
-.search1 {
-  position: relative;
-  text-align: right;
-  
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: purple;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
-.tabs {
-  background-color: rgb(201, 230, 42);
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-td {
-  vertical-align: top;
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.navbar:hover .dropdown-content {
+  display: block;
+}
+
+.navbar:hover .dropbtn {
+  background-color: #555555;
 }
