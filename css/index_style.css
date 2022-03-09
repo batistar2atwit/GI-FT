@@ -1,16 +1,19 @@
 body {
-  background-color: rgb(57, 42, 97);
-}
-.pannel {
-  background-color: blue;
+  background-image: linear-gradient(to bottom, #3f5c8c, white);
 }
 
-.app_header {
-  background-color: rgb(240, 154, 154);
+#app_header {
+  background-color: top;
+  text-align: left;
+  height: 15%;
+  width: 15%;
+  position: relative;
 }
 
 .search1 {
-  background-color: rgb(0, 255, 21);
+  position: relative;
+  text-align: right;
+  
 }
 
 .tabs {
