@@ -1,11 +1,32 @@
+body {
+  background-color: #5dafdf;
+  text-align: center;
+}
+
+#app_header {
+  width: 20%;
+}
+
+.header-search {
+  background-color: #888888;
+  border-radius: 20px 20px 0px 0px;
+}
+
+#app_header {
+  padding-bottom: 10px;
+}
+.pannel {
+  background-color: #555555;
+  padding: 2px;
+}
+
 .dropbtn {
   background-color: #0269a4;
   color: white;
-  padding: 5px;
-  padding-right: 30px;
+  padding: 16px;
   font-size: 16px;
   border: none;
-  border-radius: 5px;
+  width: 200px;
 }
 
 .navbar {
@@ -16,10 +37,11 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: purple;
-  min-width: 160px;
+  background-color: rgb(165, 68, 165);
+  min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border-radius: 0px 0px 20px 20px;
 }
 
 .dropdown-content a {
@@ -39,4 +61,54 @@
 
 .navbar:hover .dropbtn {
   background-color: #555555;
+}
+
+.tabs {
+  border: 1px solid #cccccc;
+  display: inline-block;
+}
+
+.tabs_sidebar {
+  width: 125px;
+  flex-shrink: 0;
+  background: purple;
+  padding: 10px;
+  display: inline;
+}
+
+.tabs_button {
+  display: inline-block;
+  padding: 10px;
+  background-color: #eeeeee;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.tabs_button:active {
+  background: #0269a4;
+}
+
+.tabs_button:not(:last-of-type) {
+  border-bottom: 1px solid #cccccc;
+}
+
+.tabs_button_active {
+  font-weight: bold;
+  border-right: 2px solid #cccccc;
+  background: #dddddd;
+}
+
+.tabs_content {
+  padding: 15px;
+  font-size: 0.8rem;
+  display: none;
+}
+
+.tabs_content_active {
+  display: block;
+}
+
+.tabs_content > :first-child {
+  margin-top: 0px;
 }

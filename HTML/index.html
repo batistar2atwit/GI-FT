@@ -6,27 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GI:FT</title>
     <link rel="stylesheet" href="..\css\index_style.css" />
+    <link rel="icon" href="..\images\App_Logo.png" />
   </head>
 
   <body>
-    <div class="pannel">
-      <!--Title-->
-      <div class="Header_Search">
-        <div class="header">
-          <img src="..\images\Game_Logo.png" alt="" id="app_header" />
-        </div>
-
-        <!--Seach Bar-->
-        <div class="search1">
-          <form action="">
-            <label for="search1"><b>Search</b></label>
-            <input type="text" id="search1" placeholder="Search" />
-          </form>
-        </div>
-        <br />
+    <!--Title-->
+    <div class="header-search">
+      <div class="header">
+        <img src="..\images\Game_Logo.png" alt="" id="app_header" />
       </div>
 
-      <div class="navbar">
+      <!--Seach Bar-->
+      <div class="search1">
+        <form action="">
+          <label for="search1"><b>Search</b></label>
+          <input type="text" id="search1" placeholder="Search" />
+        </form>
+      </div>
+      <br />
+    </div>
+
+    <div class="pannel">
+      <div class="navbar" id="navbar-tracker">
         <button type="button" class="dropbtn" id="tracker-tab">Tracker</button>
         <div class="dropdown-content" id="tracker-content">
           <a href="#">Ascension gems</a>
@@ -38,7 +39,7 @@
         </div>
       </div>
 
-      <div class="navbar">
+      <div class="navbar" id="navbar-guide">
         <button type="button" class="dropbtn" id="guide-tab">Guide</button>
         <div class="dropdown-content" id="guide-content">
           <a href="#">Element Guide</a>
@@ -52,28 +53,51 @@
           <a href="#">Food Guide</a>
         </div>
       </div>
-    </div>
 
-    <div class="navbar">
-      <button type="button" class="dropbtn" id="genshin-site-tab">Genshin Site</button>
-      <div class="dropdown-content" id="genshin-site-content">
-        <a href="https://genshin-impact-map.appsample.com/#/" id="map">Interactive Map</a>
-        <a
-          href="https://webstatic-sea.mihoyo.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&mhy_auth_required=true&mhy_presentation_style=fullscreen&utm_source=tools&lang=en-us&bbs_theme=dark&bbs_theme_device=1"
-          >Daily Check In</a
-        >
-        <a href="https://www.hoyolab.com/home">Hoyolab Website</a>
-        <a href=" https://mobile.twitter.com/GenshinImpact">Genshin Twitter</a>
+      <div class="navbar">
+        <button type="button" class="dropbtn" id="genshin-site-tab" data-for-data="3">Genshin Site</button>
+        <div class="dropdown-content" id="genshin-site-content">
+          <a href="https://genshin-impact-map.appsample.com/#/" id="map">Interactive Map</a>
+          <a
+            href="https://webstatic-sea.mihoyo.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&mhy_auth_required=true&mhy_presentation_style=fullscreen&utm_source=tools&lang=en-us&bbs_theme=dark&bbs_theme_device=1"
+            >Daily Check In</a
+          >
+          <a href="https://www.hoyolab.com/home">Hoyolab Website</a>
+          <a href=" https://mobile.twitter.com/GenshinImpact">Genshin Twitter</a>
+        </div>
+      </div>
+
+      <div class="navbar">
+        <button type="button" class="dropbtn" id="more-info-tab" data-for-data="4">More Info</button>
+        <div class="dropdown-content" id="more-info-content">
+          <a href="about_me.html">About Me</a>
+          <a href="Ver_Update_Notice.html">App Update Logs</a>
+          <a href="Feedback.html">Feedback</a>
+          <a href="Register&Login\Register.html">Register</a>
+        </div>
       </div>
     </div>
+    <br />
+    <br />
+    <div class="tabs">
+      <div class="tabs_sidebar">
+        <button class="tabs_button tabs_button_active" data-for-tab="1">Tracker</button>
+        <button class="tabs_button" data-for-tab="2">Guide</button>
+        <button class="tabs_button" data-for-tab="3">Genshin Site</button>
+        <button class="tabs_button" data-for-tab="4">More Info</button>
+      </div>
 
-    <div class="navbar">
-      <button type="button" class="dropbtn" id="more-info-tab">More Info</button>
-      <div class="dropdown-content" id="more-info-content">
-        <a href="about_me.html">About Me</a>
-        <a href="Ver_Update_Notice.html">App Update Logs</a>
-        <a href="Feedback.html">Feedback</a>
-        <a href="Register&Login\Register.html">Register</a>
+      <div class="tabs_content tabs_content_active" data-tab="1">
+        <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </h2>
+      </div>
+      <div class="tabs_content " data-tab="2">
+        <h2>Dolore ea quae porro nobis voluptas id iure quas illo repudiandae consequuntur eos quos, sunt tempora aliquam, </h2>
+      </div>
+      <div class="tabs_content" data-tab="3">
+        <h2>accusantium distinctio
+          maiores. Praesentium, dolorum.</h2>
       </div>
     </div>
   </body>
