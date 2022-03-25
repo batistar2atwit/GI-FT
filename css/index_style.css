@@ -1,42 +1,64 @@
-.dropbtn {
-  background-color: #0269a4;
-  color: white;
-  padding: 5px;
-  padding-right: 30px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
+* {
+  margin: 0;
+}
+body {
+  background-color: #24574b;
+}
+/*HEADER CSS*/
+.header-search {
+  width: 100%;
+  background-color: #5dc466;
+  text-align: center;
+  background-attachment: fixed;
+  margin-bottom: 5px;
+}
+#app-header {
+  width: 20%;
+}
+/*TASKBAR CSS*/
+
+/*TABS*/
+.main-tab {
+  text-align: center;
 }
 
 .navbar {
-  position: relative;
+  text-align: center;
   display: inline-block;
+  position: relative;
 }
 
+.dropbtn {
+  text-decoration: none;
+  border: none;
+  padding: 15px 20px;
+  background-color: #6c76ce;
+  position: relative;
+  width: 150px;
+  text-align: center;
+}
+
+/*LINKS*/
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: purple;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  width: 100%;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
+a {
+  margin: 5px 0px;
+  padding: 5px 10px 20px;
+  text-align: center;
   text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #a580c7;
+  text-transform: capitalize;
+  display: inline-block;
 }
 
 .navbar:hover .dropdown-content {
   display: block;
 }
 
-.navbar:hover .dropbtn {
-  background-color: #555555;
+.dropdown-content a {
+  display: block;
 }
