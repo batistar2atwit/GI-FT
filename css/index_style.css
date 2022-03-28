@@ -4,7 +4,12 @@
 body {
   background-color: #24574b;
 }
+<<<<<<< HEAD
 /*HEADER CSS*/
+=======
+
+/*Header Of Site*/
+>>>>>>> fe492353323637345396143df0a565861cb76e57
 .header-search {
   width: 100%;
   background-color: #5dc466;
@@ -20,8 +25,30 @@ body {
 /*TABS*/
 .main-tab {
   text-align: center;
+<<<<<<< HEAD
 }
 
+=======
+  background-color: grey;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-top: 20px;
+  border-color: aqua;
+  border-radius: 10px;
+}
+
+/*DIV TABS*/
+.tabs {
+  text-align: center;
+  background-color: rgb(102, 146, 228);
+  padding: 2px 2px;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 10px;
+  border-color: rgb(226, 77, 77);
+}
+/*Navigation Tabs / Buttons*/
+>>>>>>> fe492353323637345396143df0a565861cb76e57
 .navbar {
   text-align: center;
   display: inline-block;
@@ -31,11 +58,18 @@ body {
 .dropbtn {
   text-decoration: none;
   border: none;
+<<<<<<< HEAD
   padding: 15px 20px;
   background-color: #6c76ce;
   position: relative;
   width: 150px;
   text-align: center;
+=======
+  color: white;
+  margin-right: 10px;
+  padding: 15px 20px;
+  width: 150px;
+>>>>>>> fe492353323637345396143df0a565861cb76e57
 }
 
 /*LINKS*/
@@ -55,10 +89,36 @@ a {
   display: inline-block;
 }
 
-.navbar:hover .dropdown-content {
+.dropdown-content a {
+  margin-top: 2px;
+  padding: 15px 20px;
+  background-color: antiquewhite;
   display: block;
 }
 
+<<<<<<< HEAD
 .dropdown-content a {
   display: block;
+=======
+.dropdown-content a:hover {
+  background-color: aqua;
+}
+
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+  50% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.navbar:hover .dropdown-content {
+  display: block;
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top center;
+>>>>>>> fe492353323637345396143df0a565861cb76e57
 }
