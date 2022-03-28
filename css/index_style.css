@@ -6,16 +6,19 @@ body {
   background-color: #0f416c;
 }
 
+/*Header Of Site*/
 .header-search {
   text-align: center;
-  background-color: rgb(143, 224, 163);
+  background-color: grey;
   margin-bottom: 10px;
   border-style: solid;
   border-top: 20px;
   border-color: aqua;
+  border-radius: 10px;
 }
 
-.pannel {
+/*DIV TABS*/
+.tabs {
   text-align: center;
   background-color: rgb(102, 146, 228);
   padding: 2px 2px;
@@ -24,6 +27,7 @@ body {
   border-radius: 10px;
   border-color: rgb(226, 77, 77);
 }
+/*Navigation Tabs / Buttons*/
 .navbar {
   display: inline-block;
   position: relative;
@@ -32,8 +36,9 @@ body {
   background-color: rgb(93, 192, 117);
   border: none;
   color: white;
-  margin: auto;
-  padding: 15px 32px;
+  margin-right: 10px;
+  padding: 15px 20px;
+  width: 150px;
 }
 
 .dropdown-content {
@@ -41,6 +46,31 @@ body {
   position: absolute;
 }
 
+.dropdown-content a {
+  margin-top: 2px;
+  padding: 15px 20px;
+  background-color: antiquewhite;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: aqua;
+}
+
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+  50% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
 .navbar:hover .dropdown-content {
   display: block;
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top center;
 }
