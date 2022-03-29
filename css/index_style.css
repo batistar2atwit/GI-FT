@@ -59,6 +59,7 @@ a {
   text-transform: capitalize;
   display: inline-block;
 }
+
 .dropdown-content a {
   display: block;
 }
